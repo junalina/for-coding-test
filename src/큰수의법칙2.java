@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * 46
  */
 
-public class 큰수의법칙 {
+public class 큰수의법칙2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -32,18 +32,13 @@ public class 큰수의법칙 {
 
         Arrays.sort(num); // 배열 정렬
 
-        int sum = 0;
+        // 가장 큰 수가 더해지는 횟수 계산
+        int cnt = M / (K + 1) * K;
+        cnt += M % (K + 1);
 
-        while (true) {
-            for (int i = 0; i < K; i++) { // 가장 큰 수를 K번 더하기
-                if(M == 0) break; // M이 0이라면 반복문 탈출
-                sum += num[N-1];
-                M--; // 더할 때마다 1씩 빼기
-            }
-            if(M == 0) break; // M이 0이라면 반복문 탈출
-            sum += num[N-2]; // 두 번째로 큰 수를 한 번 더하기
-            M--; // 더할 때마다 1씩 빼기
-        }
+        int sum = 0;
+        sum += num[N-1] * cnt; // 가장 큰 수 더하기
+        sum += num[N-2] * (M - cnt); // 두 번째로 큰 수 더하기
 
         System.out.println(sum);
 
