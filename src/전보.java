@@ -39,10 +39,9 @@ public class 전보 {
 
         @Override
         public int compareTo(Node o) {
-            if(this.dis < o.dis) {
-                return -1;
-            }
-            return 1;
+            if(this.dis < o.dis) return -1;
+            else if(this.dis > o.dis) return 1;
+            else return 0;
         }
     }
 
