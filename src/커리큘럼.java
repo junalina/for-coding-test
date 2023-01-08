@@ -11,6 +11,19 @@ import java.util.StringTokenizer;
  * 총 N개의 강의 : 1 ~ N
  * N개의 강의를 수강하기까지 걸리는 최소 시간을 구하라
  * 풀이 : 위상 정렬
+ * input
+ * 5
+ * 10 -1
+ * 10 1 -1
+ * 4 1 -1
+ * 4 3 1 -1
+ * 3 3 -1
+ * output
+ * 10
+ * 20
+ * 14
+ * 18
+ * 17
  */
 public class 커리큘럼 {
 
