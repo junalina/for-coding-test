@@ -82,11 +82,6 @@ public class 감시피하기 {
         for (int r = 0; r < N; r++) {
             for (int c = 0; c < N; c++) {
                 copyMap[r][c] = map[r][c];
-            }
-        }
-
-        for (int r = 0; r < N; r++) {
-            for (int c = 0; c < N; c++) {
                 if (copyMap[r][c] == 'T') {
                     q.offer(new Point(r, c));
                     visited[r][c] = true;
