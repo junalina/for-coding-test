@@ -14,7 +14,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/60061
 벽면의 크기 n, 기둥과 보를 설치하거나 삭제하는 작업이 순서대로 담긴 2차원 배열 build_frame이 매개변수로 주어질 때, 모든 명령어를 수행한 후 구조물의 상태를 return
 */
 
-class Solution {
+class 기둥과보설치 {
 
     static class Structure implements Comparable<Structure> {
         int x, y, a;
