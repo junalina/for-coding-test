@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  * 풀이
  * dfs
  */
-public class 에너지모으기 {
+public class BJ_16198_에너지모으기 {
 
     static int N, max;
 

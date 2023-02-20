@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
  * * *
  * ***
  */
-public class 별찍기10 {
+public class BJ_2447_별찍기_10 {
 
     static char[][] arr;
 
