@@ -36,7 +36,6 @@ public class BJ_2805_나무자르기 {
             end = Math.max(end, tree[i]);
         }
 
-        long max = 0;
         // 이진 탐색
         while (start <= end) {
             long mid = (start + end) / 2;
@@ -45,10 +44,10 @@ public class BJ_2805_나무자르기 {
                 if (tree[i] >= mid) sum += tree[i] - mid;
             }
             if (sum >= M) {
-                max = Math.max(max, mid);
                 start = mid + 1;
-            } else end = mid - 1;
+            }
+            else end = mid - 1;
         }
-        System.out.println(max);
+        System.out.println(end);
     }
 }
