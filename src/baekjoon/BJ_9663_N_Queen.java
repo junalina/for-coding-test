@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
  * 백트래킹
  */
 
-public class BJ_9663_NQueen {
+public class BJ_9663_N_Queen {
 
     static int N, cnt;
     static int[] arr;
