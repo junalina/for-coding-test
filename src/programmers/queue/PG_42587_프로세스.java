@@ -1,4 +1,4 @@
-package programmers;
+package programmers.queue;
 
 import java.util.*;
 
